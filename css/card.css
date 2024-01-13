@@ -1,0 +1,132 @@
+/* project */
+
+.project {
+
+    background:linear-gradient( rgba(31, 34, 53, 0.9) 100%, rgba(31, 34, 53, 0.9) 100%),url("../images/sources/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--white-color);
+}
+
+.project .wrapper {
+    padding-bottom: 0;
+}
+
+#link {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: var(--accent-color);
+    margin-bottom: 3.5em;
+}
+
+/* content */
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: -0.2em;
+}
+
+
+h2 {
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1.5em;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+article a {
+    text-decoration: underline;
+}
+
+ul {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* footer */
+
+footer {
+    background: var(--dark-color);
+    color: var(--white-color);
+}
+
+
+footer .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+.icons {
+    display: flex;
+    gap: 1em;
+}
+
+
+.icon img {
+    width: 25px;
+}
+
+/* cards */
+
+article {
+    background: #162134;
+    color: white;
+    border-bottom: 2px solid var(--accent-color);
+    border-radius: 10px 0 10px 0;
+    text-align: left;
+}
+
+article img {
+    border-radius: 10px 0 10px 0;
+}
+
+#portfolio h2 {
+    margin-top: 50px;
+    margin-bottom: 0.5em;
+    font-size: 2.5rem;
+}
+
+#arrow {
+    display: none;
+}
+
+.category {
+    color: var(--accent-color);
+    font-size: 1em;
+}
+
+.description {
+    font-size: 0.9em;
+    margin-bottom: 3em;
+}
+
+article a {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+.article-text {
+    padding: 1em;
+}
+
+#article-list {
+    background: var(--dark-color);
+}
+
+/* grid */
+
+.content {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    gap: 2rem;
+}

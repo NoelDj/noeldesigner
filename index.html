@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-control" content="public">
+    <title>Noel's Portfolio - Website showcasing my websites and design</title>
+    <meta name="description" content="My portfolio where I showcase my work.">
+    <meta name="keywords" content="UI,UX,DESIGN,PORTFOLIO,WEB DESIGN,FRONTEND">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Apple Touch Icon (at least 200x200px) -->
+    <link rel="apple-touch-icon" href="favicon.png">
+    <!-- To run web application in full-screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Status Bar Style (see Supported Meta Tags below for available values) -->
+    <!-- Has no effect unless you have the previous meta tag -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1F2235">
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-config" content="browserconfig.xml" />
+
+    <!-- Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Noel's Portfolio">
+    <meta property="og:url" content="https://noeldesigner.com/">
+    <meta property="og:image" content="https://noeldesigner.com/images/thumbnails/movie-database.jpg">
+    <meta property="og:description" content="My portfolio showcasing some of the projects I have made.">
+    <meta property="og:site_name" content="Noel's Web Portfolio">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Next tags are optional but recommended -->
+    <!-- <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+ -->
+    <!-- Javascript -->
+    <script defer src="js/contact-form.js"></script>
+    <script defer src="js/index.js"></script>
+    <script defer src="js/menu.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <section class="panel" id="hero">
+
+        <div class="wrapper">
+
+            <header>
+                <p id="logo">NP</p>
+                <nav style="display: none;">
+                    <a href="#home">Home</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                </nav>
+                <div class="menu-burger" id="main-menu-button"></div>
+            </header>
+
+            <div class="hero-text">
+                <h2 id="name">Hello, I am Noel</h2>
+                <h1>FRONTEND <br> DEVELOPER <br> DESIGNER </h1>
+                <a href="#portfolio" id="portfolio-button">See Portfolio</a>
+                <a href="#contact" id="contact-button">Contact Me</a>
+            </div>
+
+            <div class="scroll-down-indicator">
+                <div class="shape">
+                    <div class="circle"></div>
+                </div>
+                <p id="scroll-text">Scroll Down</p>
+            </div>
+
+        </div>
+
+        <div class="overlay"></div>
+
+
+
+
+    </section>
+
+    <div class="menu">
+
+        <nav>
+            <h2>Menu</h2>
+
+            <div class="page-links">
+                <a href="#home">Home</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </div>
+
+            <div id="close">
+            </div>
+            <div class="social-links">
+
+                <a href="https://codepen.io/noeldj" class="icon">
+                    <img src="images/icons/codepen-icon-dark.svg" alt="">
+                </a>
+
+                <a href="https://github.com/NoelDj" class="icon">
+                    <img src="images/icons/github-icon-dark.svg" alt="">
+                </a>
+
+                <a href="https://www.linkedin.com/in/noel-p-8272201a1/" class="icon">
+                    <img src="images/icons/linked-in-icon-dark.svg" alt="">
+                </a>
+
+                <a href="mailto:noel.klp@gmail.com" class="icon">
+                    <img src="images/icons/mail-icon-dark.svg" alt="">
+                </a>
+
+            </div>
+        </nav>
+
+    </div>
+
+    <section class="sub-section panel sub" id="design">
+        <div class="wrapper">
+            <div class="text">
+                <h2>Design</h2>
+                <p>I design UI/UX for the web.</p>
+            </div>
+
+            <div class="mockup-container" id="circle">
+                <img src="images/sources/mockup.png" alt="mockup-phone-design" id="phone-mockup">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <main id="portfolio">
+
+        <h2 class="portfolio-headline">My Projects <span id="arrow">➥</span></h2>
+
+        <div class="content">
+
+            <template>
+
+                <article class="project">
+
+                    <div class="img-box">
+                        <img class="thumbnail" src="project-one.png" alt="">
+                    </div>
+                    <div class="article-text">
+                        <p class="category">UI/UX design</p>
+                        <h3 class="project-name"></h3>
+                        <p class="description">A project I started to work on</p>
+                        <a class="link" href="project.html?id=?title=">Read More</a>
+                    </div>
+
+                </article>
+
+            </template>
+
+
+
+        </div>
+
+    </main>
+
+
+
+
+    <section id="contact">
+
+        <div class="wrapper">
+
+            <h2>Let's Get In Touch</h2>
+            <ul id="contact-information">
+
+
+                <li class="contact-item">
+                    <a href="https://codepen.io/noeldj" class="icon">
+                        <img src="images/icons/codepen-icon-white.svg" alt="">
+                    </a>
+                    <p>@NoelDj</p>
+                </li>
+
+                <li class="contact-item">
+                    <a href="https://github.com/NoelDj" class="icon">
+                        <img src="images/icons/github-icon-white.svg" alt="">
+                    </a>
+                    <p>@NoelDj</p>
+                </li>
+
+
+                <li class="contact-item">
+                    <a href="https://www.linkedin.com/in/noel-p-8272201a1/" class="icon">
+                        <img src="images/icons/linked-in-icon-white.svg" alt="">
+                    </a>
+                    <p>@Noel Pedersen</p>
+                </li>
+
+                <li class="contact-item">
+                    <a href="mailto:noel.klp@gmail.com" class="icon">
+                        <img src="images/icons/mail-icon-white.svg" alt="">
+                    </a>
+                    <p>noel.klp@ <br> gmail.com</p>
+                </li>
+
+            </ul>
+
+            <form id="contactform" name="simple-contact-form" accept-charset="utf-8" method="post">
+                <h3>Send Me A Message</h3>
+                <label for="name">Name</label>
+                <input type="text" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" required>
+                <label for="">Message</label>
+                <textarea name="message" rows="6" cols="20"></textarea required>
+                <input id="sendMessage" name="message" type="submit">
+
+            </form>
+
+
+
+        </div>
+
+        
+
+        <div class="overlay"></div>
+    </section>
+
+    <section class="sub-section sub" id="about">
+        <div class="wrapper">
+
+            <div class="body-text">
+                <h2>Who Am I?</h2>
+                <h3>Multimedia designer</h3>
+                <p>My name is Noel 🇵🇭/🇩🇰 and I am 24 years old. I have a diploma in Multimedia Design.
+                    I design and develop websites for businesses. With experience since I was 15 year old, I know various softwares such as Wordpress and React.
+                    By practicing I have had plenty of opportunities to learn, but also apply my skills in practice.</p>
+            </div>
+
+            <img src="images/sources/me.jpg" alt="profile-picture" id="profile">
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper" id="s">
+            <p id="logo">NP</p>
+
+            <nav class="icons">
+                <a href="https://codepen.io/noeldj" class="icon">
+                    <img src="images/icons/codepen-icon-dark.svg" alt="">
+                </a>
+                <a href="https://github.com/NoelDj" class="icon">
+                    <img src="images/icons/github-icon-dark.svg" alt="">
+                </a>
+
+                <a href="https://www.linkedin.com/in/noel-p-8272201a1/" class="icon">
+                    <img src="images/icons/linked-in-icon-dark.svg" alt="">
+                </a>
+
+                <a href="mailto:webmaster@example.com" class="icon">
+                    <img src="images/icons/mail-icon-dark.svg" alt="">
+                </a>
+            </nav>
+        </div>
+    </footer>
+
+    <noscript>
+        You need to enable JavaScript to run this app.
+    </noscript>
+      
+</body>
+
+</html>

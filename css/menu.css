@@ -1,0 +1,240 @@
+:root {
+    --accent-color: #FFC576;
+    --white-color: #ffffff;
+    --dark-color: #1F2235;
+    /*    --background: repeating-linear-gradient(90deg, rgb(32, 32, 32) 0px, rgb(32, 32, 32) 2px, rgb(33, 33, 33) 2px, rgb(33, 33, 33) 4px, rgb(34, 34, 34) 4px, rgb(34, 34, 34) 6px, rgb(33, 33, 33) 6px, rgb(33, 33, 33) 8px, rgb(36, 36, 36) 8px, rgb(36, 36, 36) 10px, rgb(35, 35, 35) 10px, rgb(35, 35, 35) 12px, rgb(33, 33, 33) 12px, rgb(33, 33, 33) 14px, rgb(32, 32, 32) 14px, rgb(32, 32, 32) 16px, rgb(36, 36, 36) 16px, rgb(36, 36, 36) 18px, rgb(34, 34, 34) 18px, rgb(34, 34, 34) 20px, rgb(35, 35, 35) 20px, rgb(35, 35, 35) 22px, rgb(35, 35, 35) 22px, rgb(35, 35, 35) 24px);
+  */
+    --background: linear-gradient(90deg, rgba(31, 34, 53, 1) 0%, rgba(33, 22, 57, 1) 100%);
+    --primary-font: 'poppins', "Trebuchet MS", Arial, Helvetica, sans-serif;
+    --scondary-font: 'Titillium Web', Verdana, Geneva, sans-serif;
+}
+
+
+.hide-overflow {
+    overflow-y: hidden;
+}
+
+/* menu */
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 70%;
+    transform: translateX(-100%);
+    background: var(--dark-color);
+    z-index: 32;
+    transition: 1s ease-in-out;
+}
+
+.menu nav {
+
+    color: var(--dark-color);
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+}
+
+.menu h2 {
+    font-weight: 300;
+    padding: 2em;
+    border-bottom: 1px solid var(--dark-color);
+}
+
+.menu nav a {
+    font-family: var(--primary-font);
+    font-size: 1.5em;
+    transition: 0.5s;
+    position: relative;
+}
+
+
+#close {
+    display: none;
+    cursor: pointer;
+}
+
+.page-links {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+
+}
+
+.social-links {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5em;
+    padding: 2em;
+
+    border-top: 1px solid var(--dark-color);
+
+}
+
+/* burger menu */
+
+
+.menu-burger {
+    transition: all 0.5s ease-in-out;
+    width: 31px;
+    height: 3px;
+    background: var(--white-color);
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    left: -5px;
+    z-index: 3333;
+}
+
+.menu-burger::after,
+.menu-burger::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 31px;
+    height: 3px;
+    background: var(--white-color);
+
+    border-radius: 10px;
+}
+
+.menu-burger::before {
+    transform: translateY(-8px);
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.menu-burger::after {
+    transform: translateY(8px);
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+/*animation*/
+
+.open {
+    background: transparent;
+    transform: translateX(10px);
+}
+
+.open::before {
+    transform: rotate(45deg);
+    transition: all 0.5s ease-in-out;
+}
+
+.open::after {
+    transform: rotate(-45deg);
+    transition: all 0.5s ease-in-out;
+}
+
+.burger-menu {
+    position: absolute;
+    top: 0;
+    background: var(--dark-color);
+    width: 40%;
+    right: 0;
+    z-index: 100;
+    transition: all 0.25s ease-in;
+
+}
+
+.active {
+    transform: translateX(0);
+    transition: all 0.25s ease-in;
+}
+
+@media only screen and (min-width: 800px) {
+
+    .menu {
+        position: fixed;
+        height: 100vh;
+        z-index: 222;
+        width: 100%;
+        background:
+            url(../images/sources/bg.jpg);
+        background-position: center;
+        background-size: cover;
+        color: var(--white-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .menu nav {
+        margin: auto;
+        max-width: 800px;
+        height: 60vh;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        background: white;
+        color: var(--dark-color);
+    }
+
+    .menu h2 {
+        border-bottom: 1px solid var(--accent-color);
+    }
+
+    .menu nav a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        left: 0;
+        height: 1px;
+        bottom: 0;
+        background: var(--accent-color);
+        transition: 1s;
+    }
+   
+    .social-links {
+        border-top: 1px solid var(--accent-color);
+    }
+
+    .menu nav a:hover::after {
+        width: 100%;
+    }
+
+    #close {
+        position: absolute;
+        display: block;
+        right: 32px;
+        top: 32px;
+        width: 32px;
+        height: 32px;
+        opacity: .3
+    }
+
+    #close:hover {
+        opacity: 1;
+    }
+
+    #close:before,
+    #close:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 33px;
+        width: 2px;
+        background-color: black;
+    }
+
+    #close:before {
+        transform: rotate(45deg);
+    }
+
+    #close:after {
+        transform: rotate(-45deg);
+    }
+
+
+}

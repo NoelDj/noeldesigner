@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="github-icon-white" transform="translate(-245 -133)">
+    <path id="Icon_feather-github" data-name="Icon feather-github" d="M11.51,23.374C5.431,25.2,5.431,20.335,3,19.727m17.019,7.294v-4.7a4.1,4.1,0,0,0-1.143-3.173c3.817-.425,7.829-1.872,7.829-8.51a6.612,6.612,0,0,0-1.823-4.558,6.163,6.163,0,0,0-.11-4.584s-1.434-.425-4.753,1.8a16.266,16.266,0,0,0-8.51,0c-3.319-2.225-4.753-1.8-4.753-1.8a6.163,6.163,0,0,0-.109,4.583,6.613,6.613,0,0,0-1.823,4.6c0,6.589,4.012,8.035,7.829,8.51a4.1,4.1,0,0,0-1.143,3.136v4.7" transform="translate(255.147 144.035)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(245 133)" fill="none" stroke="#fff" stroke-width="3">
+      <circle cx="25" cy="25" r="25" stroke="none"/>
+      <circle cx="25" cy="25" r="23.5" fill="none"/>
+    </g>
+  </g>
+</svg>

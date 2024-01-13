@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="Group_6" data-name="Group 6" transform="translate(-105 -133)">
+    <path id="Icon_awesome-codepen" data-name="Icon awesome-codepen" d="M28.009,8.906,14.96.207a1.24,1.24,0,0,0-1.37,0L.542,8.906A1.247,1.247,0,0,0,0,9.925v8.7a1.247,1.247,0,0,0,.542,1.02l13.049,8.7a1.24,1.24,0,0,0,1.37,0l13.049-8.7a1.247,1.247,0,0,0,.542-1.02v-8.7a1.247,1.247,0,0,0-.542-1.02ZM15.5,3.52l9.607,6.4-4.286,2.868L15.5,9.24Zm-2.454,0V9.24L7.727,12.793,3.441,9.925Zm-10.6,8.7,3.075,2.055L2.454,16.33Zm10.6,12.81-9.607-6.4,4.286-2.868,5.321,3.553Zm1.227-7.855-4.334-2.9,4.334-2.9,4.334,2.9ZM15.5,25.029v-5.72l5.321-3.553,4.286,2.868Zm10.6-8.7-3.075-2.055L26.1,12.22Z" transform="translate(116 144)" stroke="#1f2235" stroke-width="1"/>
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(105 133)" fill="none" stroke="#1f2235" stroke-width="3">
+      <circle cx="25" cy="25" r="25" stroke="none"/>
+      <circle cx="25" cy="25" r="23.5" fill="none"/>
+    </g>
+  </g>
+</svg>
