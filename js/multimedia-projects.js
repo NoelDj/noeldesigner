@@ -22,7 +22,6 @@ function init() {
 }
 
 function handleData(items) {
-    
     items.data.forEach(handleItems)
 }
 
@@ -51,7 +50,6 @@ function changeString(string) {
 const x = window.innerHeight;
 
 window.addEventListener("scroll", function () {
-
     var header = document.querySelector("header");
     header.classList.toggle("sticky", window.scrollY > 0)
 })

@@ -29,17 +29,12 @@ function handleData(items) {
 
 function handleItems(project) {    
     const copy = document.querySelector('template').content.cloneNode(true)
-
     copy.querySelector('.project-name').textContent = project.name
     copy.querySelector('.category').textContent = project.category
     copy.querySelector('.thumbnail').src = 'images/thumbnails/' + project.thumbnail
     copy.querySelector('.thumbnail').alt = project.name + ' portfolio design'
-
     copy.querySelector('.description').textContent = project.subheading
-
-    copy.querySelector('.link').href = `project/${changeString(project.name)}/${project.id}`
-
-
+    copy.querySelector('.link').href = `project?id=${project.id}`
     copy.querySelector('.project').id = project.id
     document.querySelector('.content').appendChild(copy)
 }
@@ -68,11 +63,10 @@ function startGsap() {
     document.head.appendChild(script);
 }   
 
-const x = window.innerHeight;
+/* const x = window.innerHeight;
 
 window.addEventListener("scroll", function () {
-
     var header = document.querySelector("header");
     header.classList.toggle("sticky", window.scrollY > 0)
-})
+}) */
 

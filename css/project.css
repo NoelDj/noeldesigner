@@ -130,10 +130,6 @@ p {
     line-height: 1.5;
 }
 
-article a {
-    text-decoration: underline;
-}
-
 ul {
     margin-left: 20px;
     font-size: 18px;
