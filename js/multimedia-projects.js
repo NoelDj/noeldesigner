@@ -46,11 +46,3 @@ function handleItems(project) {
 function changeString(string) {
     return string.toLowerCase().split(' ').join('-')
 } 
-
-const x = window.innerHeight;
-
-window.addEventListener("scroll", function () {
-    var header = document.querySelector("header");
-    header.classList.toggle("sticky", window.scrollY > 0)
-})
-

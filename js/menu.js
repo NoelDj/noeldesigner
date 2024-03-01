@@ -1,5 +1,4 @@
-document.querySelector('#main-menu-button').addEventListener('click', (e) => {
-
+document.querySelector('.menu-burger').addEventListener('click', (e) => {
     e.target.classList.toggle('open')
     document.querySelector('.menu').classList.toggle('active')
     document.body.classList.toggle('hide-overflow')

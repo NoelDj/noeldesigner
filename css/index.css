@@ -88,11 +88,8 @@ header .wrapper {
     justify-content: space-between;
 }
 
-#logo {
-    font-family: var(--secondary-font);
-    font-size: 2rem;
-    color: var(--accent-color);
-
+.logo img {
+    width: 60px;
 }
 
 /* hero section */
@@ -544,7 +541,6 @@ footer .wrapper {
     .overlay {
         background-attachment: fixed;
     }
-
 
     #design {
         height: 100vh;
