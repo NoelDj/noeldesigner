@@ -91,8 +91,7 @@ header nav {
 /* project */
 
 .project {
-
-    background:linear-gradient( rgba(31, 34, 53, 0.9) 100%, rgba(31, 34, 53, 0.9) 100%),url("images/sources/bg.jpg");
+    background:linear-gradient( rgba(31, 34, 53, 0.9) 100%, rgba(31, 34, 53, 0.9) 100%),url("../images/sources/bg.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
