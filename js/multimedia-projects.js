@@ -35,7 +35,7 @@ function handleItems(project) {
 
     copy.querySelector('.description').textContent = project.subheading
 
-    copy.querySelector('.link').href = `project/${changeString(project.name)}/${project.id}`
+    copy.querySelector('.link').href = `project.html?id=${project.id}`
 
 
     copy.querySelector('.project').id = project.id
