@@ -34,7 +34,7 @@ function showProjects(project) {
 
     document.querySelector('#link').href = project.link
 
-    document.querySelector('.thumbnail').src = '../../images/thumbnails/' + project.thumbnail
+    document.querySelector('.thumbnail').src = 'images/thumbnails/' + project.thumbnail
 
     document.querySelector('article').innerHTML = project.content
 
